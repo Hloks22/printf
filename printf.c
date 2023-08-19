@@ -37,26 +37,26 @@ int _printf(const char *format, ...)
 			else if (*fmt_ptr == 'd' || *fmt_ptr == 'i')
 			{
 				num = va_arg(args, int);
-				printf("[%d]", num);
+				printf("%d", num);
 				printed_chars += 9; /* Number of chararcters printed */
 			}
 			else if (*fmt_ptr == 'u')
 			{
 				num1 = va_arg(args, unsigned int);
-				printf("[%u]", num1);
+				printf("%u", num1);
 				printed_chars += 4; /* Number of chararcters printed */
 			}
 			else if (*fmt_ptr == 'o')
 			{
 				num1 = va_arg(args, unsigned int);
-				printf("[%o]", num1);
+				printf("%o", num1);
 				printed_chars += 4;
 			}
 			else if (*fmt_ptr == 'x' || *fmt_ptr == 'X')
 			{
 				num1 = va_arg(args, unsigned int);
-				printf("[%x]", num);
-				printed_chars += 9; /* Number of characters printed */
+				printf("%x,%X", num1);
+				printed_chars += 4; /* Number of characters printed */
 			}
 			else if (*fmt_ptr == 'c')
 			{
@@ -67,13 +67,13 @@ int _printf(const char *format, ...)
 			else if (*fmt_ptr == 's')
 			{
 				str = va_arg(args, char *);
-				printf("[%s]", str);
+				printf("%s", str);
 				printed_chars += strlen(str) + 2; /* Number of chararcers to be printed */
 			}
 			else if (*fmt_ptr == 'p')
 			{
 				ptr = va_arg(args, void *);
-				printf("[%p]", ptr);
+				printf("%p", ptr);
 				printed_chars += 18; /* Number of characters printed */
 			}
 			else if (*fmt_ptr == '%')
