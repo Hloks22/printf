@@ -52,11 +52,11 @@ int _printf(const char *format, ...)
 				printf("%o", num1);
 				printed_chars += 4;
 			}
-			else if (*fmt_ptr == 'x' && *fmt_ptr == 'X')
+			else if (*fmt_ptr == 'x' || *fmt_ptr == 'X')
 			{
 				num1 = va_arg(args, unsigned int);
-				printf("%x,%X", num1);
-				printed_chars += 4; /* Number of characters printed */
+				printf("%x,%X", num1, num1);
+				printed_chars += 16; /* Number of characters printed */
 			}
 			else if (*fmt_ptr == 'c')
 			{
