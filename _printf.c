@@ -1,7 +1,7 @@
 #include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
-
+/* Project by Daniel and Eric */
 /**
  * _printf - produces output according to a format
  * @format: format
