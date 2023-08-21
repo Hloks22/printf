@@ -2,7 +2,7 @@
 
 /**
  * print_unsigned - prints an unsigned number
- * @types: List of arguments
+ * @types: list of arguments
  * @buffer: buffer array to handle print
  * @flags:  calculates active flags
  * @width: get width
