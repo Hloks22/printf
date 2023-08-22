@@ -1,7 +1,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
-
+/* project by Daniel and Eric */
 /**
  * main - Entry point
  *
