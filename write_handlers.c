@@ -1,15 +1,15 @@
 #include "main.h"
-
+/* project by Daniel and Eric */
 /**
- * handle_write_char - It Prints a string
+ * handle_write_char - prints a string
  * @c: char types.
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags.
+ * @buffer: buffer array to handle print
+ * @flags:  calculates active flags.
  * @width: get width.
  * @precision: precision specifier
- * @size: Size specifier
+ * @size: size specifier
  *
- * Return: Number of chars printed.
+ * Return: number of chars printed.
  */
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
