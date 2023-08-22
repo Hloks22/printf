@@ -1,8 +1,8 @@
 #include "main.h"
-
+/* project by Daniel and Eric */
 /**
- * is_printable - It Evaluates if a char is printable
- * @c: Char to be evaluated.
+ * is_printable - evaluates if a char is printable
+ * @c: char to be evaluated.
  *
  * Return: 1 if c is printable, 0 otherwise
  */
